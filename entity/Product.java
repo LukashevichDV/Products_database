@@ -31,20 +31,14 @@ public class Product {
     public Product() {
     }
 
-    /*gergregrerge
+ /*   *//*gergregrerge
             grhiughuierhgiuehriuhiueiuhgegeuge
     gergregrerge
             grhiughuierhgiuehriuhiueiuhgegeuge
     gergregrerge
             grhiughuierhgiuehriuhiueiuhgegeuge
-    gergregrerge
-            grhiughuierhgiuehriuhiueiuhgegeuge
-    gergregrerge
-            grhiughuierhgiuehriuhiueiuhgegeuge
-    gergregrerge
-            grhiughuierhgiuehriuhiueiuhgegeuge
-    gergregrerge
-            grhiughuierhgiuehriuhiueiuhgegeuge*/
+    gergregrerge*/
+
 
     public Product(String name, String description, String date) {
         this.name = name;
