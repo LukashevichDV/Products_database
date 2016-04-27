@@ -1,10 +1,10 @@
 package ru.mail.LukashevichDV.entity;
 
 
-import javafx.scene.control.TableColumn;
 
 import javax.persistence.*;
 
+import java.util.ArrayList;
 import java.util.List;
 
 @Entity
@@ -22,15 +22,35 @@ public class Product {
     @Column(name = "description")
     private String description;
 
-    @Column(name = "date of produce")
+    @Column(name = "date_of_produce")
     private String date;
 
     @OneToMany(cascade = CascadeType.REFRESH, fetch = FetchType.LAZY)
     private List<GroupProduct> groupProductList;
 
+    public Product() {
+    }
 
-    public Product(String nameProduct, String descriptionProduct, String dateProduct) {
+    /*gergregrerge
+            grhiughuierhgiuehriuhiueiuhgegeuge
+    gergregrerge
+            grhiughuierhgiuehriuhiueiuhgegeuge
+    gergregrerge
+            grhiughuierhgiuehriuhiueiuhgegeuge
+    gergregrerge
+            grhiughuierhgiuehriuhiueiuhgegeuge
+    gergregrerge
+            grhiughuierhgiuehriuhiueiuhgegeuge
+    gergregrerge
+            grhiughuierhgiuehriuhiueiuhgegeuge
+    gergregrerge
+            grhiughuierhgiuehriuhiueiuhgegeuge*/
 
+    public Product(String name, String description, String date) {
+        this.name = name;
+        this.description = description;
+        this.date = date;
+        List<GroupProduct> groupProductList = new ArrayList<>();
     }
 
     public Product(Integer id, String name, List<GroupProduct> groupProductList, String description, String date) {
